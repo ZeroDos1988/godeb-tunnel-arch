@@ -1,0 +1,5 @@
+/godeb-wg
+*.tar.gz
+*.pkg.tar.zst
+/packaging/arch/pkg
+/packaging/arch/src

@@ -1,0 +1,13 @@
+[Unit]
+Description=GoDeb WireGuard trusted-network monitor
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/godeb-wg monitor
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
