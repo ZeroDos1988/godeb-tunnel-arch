@@ -1,5 +1,5 @@
 [Unit]
-Description=GoDeb WireGuard trusted-network monitor
+Description=GoDeb Tunnel trusted-network monitor
 After=network-online.target
 Wants=network-online.target
 

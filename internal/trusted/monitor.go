@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ZeroDos1988/godeb-wireguard-arch/internal/config"
-	"github.com/ZeroDos1988/godeb-wireguard-arch/internal/tunnel"
+	"github.com/ZeroDos1988/godeb-tunnel-arch/internal/config"
+	"github.com/ZeroDos1988/godeb-tunnel-arch/internal/tunnel"
 )
 
 // Monitor disconnects tunnels whose GoDeb-Trusted-Endpoint is reachable.

@@ -1,24 +1,24 @@
 # Maintainer: GoDeb <noreply@godeb.local>
-pkgname=godeb-wireguard
+pkgname=godeb-tunnel
 pkgver=1.0.0
 pkgrel=1
-pkgdesc="GoDeb WireGuard client for Arch (trusted endpoint + excluded AllowedIPs)"
+pkgdesc="GoDeb Tunnel client for Arch (wg-quick with trusted endpoint and excluded AllowedIPs)"
 arch=('x86_64' 'aarch64')
-url="https://github.com/ZeroDos1988/godeb-wireguard-arch"
-license=('MIT')
+url="https://github.com/ZeroDos1988/godeb-tunnel-arch"
+license=('GPL-3.0-only')
 depends=('wireguard-tools')
 makedepends=('go')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
 sha256sums=('SKIP')
 
 build() {
-  cd "godeb-wireguard-arch-$pkgver"
+  cd "godeb-tunnel-arch-$pkgver"
   export CGO_ENABLED=0
   go build -trimpath -ldflags "-s -w" -o godeb-wg ./cmd/godeb-wg
 }
 
 package() {
-  cd "godeb-wireguard-arch-$pkgver"
+  cd "godeb-tunnel-arch-$pkgver"
   install -Dm755 godeb-wg "$pkgdir/usr/bin/godeb-wg"
   install -Dm644 systemd/godeb-wg-monitor.service \
     "$pkgdir/usr/lib/systemd/user/godeb-wg-monitor.service"

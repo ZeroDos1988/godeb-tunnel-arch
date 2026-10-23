@@ -1,3 +1,3 @@
-module github.com/ZeroDos1988/godeb-wireguard-arch
+module github.com/ZeroDos1988/godeb-tunnel-arch
 
 go 1.22

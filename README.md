@@ -1,6 +1,6 @@
-# GoDeb WireGuard (Arch / Linux)
+# GoDeb Tunnel (Arch / Linux)
 
-Native GoDeb WireGuard companion for Arch Linux (and other Linux distros with `wg-quick`).
+Native GoDeb Tunnel client for Arch Linux (and other Linux distros with `wg-quick`).
 
 Matches the Android / Windows GoDeb clients for:
 
@@ -62,10 +62,14 @@ Configs are stored in `~/.config/godeb-wg/tunnels/`.
 
 ## Related
 
-- [godeb-wireguard-android](https://github.com/ZeroDos1988/godeb-wireguard-android)
-- [godeb-wireguard-windows](https://github.com/ZeroDos1988/godeb-wireguard-windows)
+- [godeb-tunnel-android](https://github.com/ZeroDos1988/godeb-tunnel-android)
+- Windows client: not public yet
 - [GoDeb](https://github.com/ZeroDos1988/GoDeb)
 
 ## License
 
-MIT
+GPL-3.0-only, see [LICENSE](LICENSE). Copyright (C) 2026 ZeroDos1988.
+
+## Trademark
+
+GoDeb Tunnel is an independent project and is not affiliated with or endorsed by the WireGuard project. It uses the system's `wg-quick` / `wireguard-tools`. "WireGuard" is a registered trademark of Jason A. Donenfeld.

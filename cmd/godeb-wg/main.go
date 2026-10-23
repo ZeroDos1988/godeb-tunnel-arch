@@ -8,9 +8,9 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/ZeroDos1988/godeb-wireguard-arch/internal/cidr"
-	"github.com/ZeroDos1988/godeb-wireguard-arch/internal/trusted"
-	"github.com/ZeroDos1988/godeb-wireguard-arch/internal/tunnel"
+	"github.com/ZeroDos1988/godeb-tunnel-arch/internal/cidr"
+	"github.com/ZeroDos1988/godeb-tunnel-arch/internal/trusted"
+	"github.com/ZeroDos1988/godeb-tunnel-arch/internal/tunnel"
 )
 
 const version = "1.0.0-godeb"
@@ -49,7 +49,7 @@ func main() {
 }
 
 func usage() {
-	fmt.Fprintf(os.Stderr, `godeb-wg %s — GoDeb WireGuard client for Arch / Linux
+	fmt.Fprintf(os.Stderr, `godeb-wg %s — GoDeb Tunnel client for Arch / Linux
 
 Usage:
   godeb-wg list
