@@ -13,7 +13,7 @@ import (
 	"github.com/ZeroDos1988/godeb-tunnel-arch/internal/tunnel"
 )
 
-const version = "1.0.0-godeb"
+const version = "1.0.1"
 
 func main() {
 	if len(os.Args) < 2 {
